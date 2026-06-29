@@ -54,7 +54,7 @@
 .tl-footer span{color:#FFD200;opacity:.5}
 .codes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px;margin-top:.8rem}
 .code-row{background:#0f0f0f;border:1px solid #1e1e1e;border-radius:6px;padding:8px 12px;display:flex;align-items:center;gap:10px;transition:border-color .15s}
-.code-row{position:relative;cursor:default}.code-row:hover{border-color:#FFD200}.code-row:hover .code-desc::after{content:attr(data-info);display:none}
+.code-row:hover{border-color:#333}
 .code-badge{font-family:'JetBrains Mono',monospace;font-size:11px;color:#FFD200;background:rgba(255,210,0,.07);border:1px solid rgba(255,210,0,.18);padding:3px 8px;border-radius:4px;min-width:54px;text-align:center;flex-shrink:0}
 .code-emoji{font-size:15px;flex-shrink:0;width:22px;text-align:center}
 .code-desc{font-size:12px;color:#777;line-height:1.4}
@@ -826,15 +826,6 @@
 html, body { background: #0a0a0a; color: #e8e2d4; }
 .tl-topic, .tl-section, .principal-section { background: #0a0a0a; }
 
-
-/* zapp tooltip */
-.zapp-tooltip{position:fixed;z-index:9990;width:280px;background:#0a0a0a;border:1px solid #FFD200;border-radius:8px;padding:12px 14px;display:none;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.7)}
-.zapp-tooltip.show{display:block}
-.zapp-tt-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#FFD200;letter-spacing:.06em;margin-bottom:8px;border-bottom:1px solid #1a1a1a;padding-bottom:5px}
-.zapp-tt-section{font-size:10px;color:#555;font-family:'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;margin:6px 0 3px}
-.zapp-tt-bullet{font-size:11px;color:#888;padding:2px 0 2px 10px;position:relative;line-height:1.5}
-.zapp-tt-bullet::before{content:'·';position:absolute;left:2px;color:#FFD200}
-
 </style>
 </head>
 <body>
@@ -1075,6 +1066,18 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     </div>
   </div>
 </div>
+<div style="margin:0 2rem 1rem;border-radius:8px;overflow:hidden;border:1px solid #1a1a1a">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#555;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;background:#0f0f0f;border-bottom:1px solid #1a1a1a;display:flex;align-items:center;gap:6px">
+    <span style="color:#4285F4">📍</span> 6290 McDonough Drive, Suite D — Norcross, GA 30093
+    <a href="https://maps.google.com/?q=6290+McDonough+Drive+Suite+D+Norcross+GA+30093" target="_blank" style="margin-left:auto;font-size:9px;color:#4285F4;text-decoration:none;border:1px solid rgba(66,133,244,.3);padding:2px 8px;border-radius:3px">Abrir en Maps ↗</a>
+  </div>
+  <iframe
+    src="https://maps.google.com/maps?q=6290+McDonough+Drive+Suite+D+Norcross+GA+30093&t=&z=17&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="280" style="border:0;display:block" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
 <div style="margin:0 2rem 1rem;background:#0a100f;border:1px solid rgba(46,204,113,.2);border-left:4px solid #2ecc71;border-radius:8px;padding:1.2rem 1.4rem">
   <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:#2ecc71;margin-bottom:.8rem">🌅 Reglas de la mañana</div>
   <div style="display:flex;flex-direction:column;gap:10px">
@@ -1114,6 +1117,151 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 </div>
 
 
+<div style="margin:1rem 2rem;background:#0f0f0f;border:1px solid #1a1a1a;border-left:4px solid #FFD200;border-radius:8px;padding:1.2rem 1.4rem">
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:#FFD200;margin-bottom:.8rem">🏢 Informacion de la oficina de TaxiLaser</div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:16px;flex-shrink:0">📍</span><div><div style="font-size:12px;color:#888;font-family:'JetBrains Mono',monospace;margin-bottom:2px">Direccion</div><div style="font-size:13px;color:#e8e2d4;font-weight:500">6290 McDonough Drive, Suite D</div></div></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:16px;flex-shrink:0">🕐</span><div><div style="font-size:12px;color:#888;font-family:'JetBrains Mono',monospace;margin-bottom:2px">Horario de atencion</div><div style="font-size:13px;color:#e8e2d4;font-weight:500">Lunes a Viernes · 10:00 AM – 5:00 PM</div><div style="font-size:11px;color:#7a6a44;margin-top:2px;font-family:'JetBrains Mono',monospace">Inscripciones de vehiculos: 10:00 AM – 3:00 PM</div></div></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:16px;flex-shrink:0">💳</span><div><div style="font-size:12px;color:#888;font-family:'JetBrains Mono',monospace;margin-bottom:2px">Mail para pagos via Zelle</div><div style="font-size:13px;color:#FFD200;font-weight:500;font-family:'JetBrains Mono',monospace">pagos@taxilaserllc.com</div></div></div>
+  </div>
+</div>
+<div style="margin:0 2rem 1rem;background:#0a0d1a;border:1px solid rgba(52,152,219,.25);border-left:4px solid #3498db;border-radius:8px;padding:1.2rem 1.4rem">
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:#3498db;margin-bottom:.8rem">💲 Horarios de descuentos y tarifas</div>
+  <div style="display:flex;flex-direction:column;gap:7px">
+    <div style="background:#0f0f0f;border:1px solid #1e1e1e;border-radius:5px;padding:8px 12px;display:flex;gap:10px;align-items:flex-start"><span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#2ecc71;flex-shrink:0;min-width:110px">5:00 AM – 10:00 PM</span><span style="font-size:12px;color:#888;line-height:1.65">Mínima <strong style="color:#e8e2d4">$6</strong> — <span style="color:#2ecc71;font-weight:500">con descuento</span> a lo que marque el taxímetro.</span></div>
+    <div style="background:#0f0f0f;border:1px solid #1e1e1e;border-radius:5px;padding:8px 12px;display:flex;gap:10px;align-items:flex-start"><span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#f39c12;flex-shrink:0;min-width:110px">10:00 PM – 11:59 PM</span><span style="font-size:12px;color:#888;line-height:1.65">Mínima <strong style="color:#e8e2d4">$6</strong> — <span style="color:#f39c12;font-weight:500">sin descuento</span> a lo que marque el taxímetro.</span></div>
+    <div style="background:#0f0f0f;border:1px solid #1e1e1e;border-radius:5px;padding:8px 12px;display:flex;gap:10px;align-items:flex-start"><span style="font-family:'Bebas Neue',sans-serif;font-size:.95rem;color:#e74c3c;flex-shrink:0;min-width:110px">11:59 PM – 5:00 AM</span><span style="font-size:12px;color:#888;line-height:1.65">Mínima <strong style="color:#e8e2d4">$8</strong> — tarifa nocturna.</span></div>
+    <div style="background:#1a0a00;border:1px solid rgba(231,76,60,.3);border-left:2px solid #e74c3c;border-radius:5px;padding:8px 12px;display:flex;gap:10px;align-items:flex-start"><span style="font-size:16px;flex-shrink:0">🎉</span><div><div style="font-size:12px;color:#e8e2d4;font-weight:500;margin-bottom:3px">Sáb y Dom 2:00 AM – 4:00 AM · Lun 1:00 AM – 3:00 AM</div><div style="font-size:12px;color:#888;line-height:1.65">Servicios saliendo de bares y discotecas: mínima <strong style="color:#e74c3c">$15</strong> — <span style="color:#e74c3c;font-weight:500">sin descuento</span> a lo que marque el taxímetro.</div></div></div>
+  </div>
+</div>
+<div style="margin:0 2rem 1rem;background:#0a100f;border:1px solid rgba(46,204,113,.2);border-left:4px solid #2ecc71;border-radius:8px;padding:1.2rem 1.4rem">
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:#2ecc71;margin-bottom:.8rem">🌅 Reglas de la mañana</div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:15px;flex-shrink:0">🚫</span><div><div style="font-size:13px;color:#e8e2d4;font-weight:500;margin-bottom:3px">De 4:00 AM a 7:00 AM no agendamos servicios</div><div style="font-size:12px;color:#666;line-height:1.7">Solo servicios inmediatos — no programados. Excepción: aeropuerto o destinos fuera de zona.</div></div></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:15px;flex-shrink:0">📍</span><div><div style="font-size:13px;color:#e8e2d4;font-weight:500;margin-bottom:3px">Consultamos el destino al cliente</div><div style="font-size:12px;color:#666;line-height:1.7">Le preguntamos si quiere proporcionar su destino para el servicio y para facilitar el trabajo del Principal. No es obligatorio — es solo una consulta.</div></div></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><span style="font-size:15px;flex-shrink:0">⏳</span><div><div style="font-size:13px;color:#e8e2d4;font-weight:500;margin-bottom:3px">Alta demanda — informar tiempos de espera</div><div style="font-size:12px;color:#666;line-height:1.7">Si hay muchos servicios y pocas unidades, avisamos al cliente el tiempo extra. Si acepta, lo enviamos y en la info del servicio agregamos:</div><div style="background:#0f0f0f;border:1px solid #1e1e1e;border-left:2px solid #2ecc71;border-radius:4px;padding:6px 10px;font-size:11px;font-family:'JetBrains Mono',monospace;color:#2ecc71;margin-top:6px">/ ESPERA 30 MINUTOS</div><div style="margin-top:8px;background:#0d0a00;border:1px solid rgba(255,210,0,.2);border-left:2px solid #FFD200;border-radius:4px;padding:7px 10px;font-size:11px;color:#7a6a44;font-family:'JetBrains Mono',monospace;line-height:1.6"><strong style="color:#FFD200">Siempre podemos consultar al Principal de turno</strong> cuánto tiempo de demora maneja en la zona.</div></div></div>
+  </div>
+</div>
+<div class="tl-divider-line"></div>
+<!-- GRILLA DE HORARIOS EXPLICADA -->
+<div class="tl-topic">
+  <div class="tl-section-label">Flujo de trabajo</div>
+  <div class="tl-section-title">Como leer la grilla de horarios</div>
+
+  <div class="sched-explain">
+    <div class="sched-explain-header">¿Cómo funciona la grilla?</div>
+    <div class="sched-explain-body">
+      <div style="background:#0d0a00;border:1px solid rgba(255,150,0,.3);border-left:3px solid #ff9500;border-radius:5px;padding:7px 12px;font-size:11px;color:#ff9500;font-family:'JetBrains Mono',monospace;letter-spacing:.05em;margin-bottom:10px">
+        ⚠️ <strong style="color:#ffb347">Importante:</strong> Todos los horarios de la grilla están basados en la <strong style="color:#FFD200">Hora de Atlanta (ET — Eastern Time)</strong>. Verificá siempre que tu reloj esté en hora de Atlanta antes de checar tu bloque.
+      </div>
+      La grilla de horarios se abre en el <strong>Excel semanal</strong> todos los días antes de arrancar el turno. Para leerla tenés que hacer dos cosas:<br><br>
+      <span class="hl">1.</span> Buscá tu <strong>número de dispatcher</strong> en la fila de arriba (por ejemplo <strong>D038</strong>).<br>
+      <span class="hl">2.</span> Cruzá tu columna con la <strong>hora actual</strong> en la columna de la izquierda.<br><br>
+      Las casillas con color son tus <strong>bloques de trabajo activos</strong>. Las casillas vacías (sin color) significan que en esa hora no tenés bloque. Donde termina el color, <strong>termina el bloque</strong>.
+    </div>
+  </div>
+
+  <!-- DEMO GRID 1 — visual example like the photo -->
+  <p style="color:#666;font-size:12px;margin-bottom:8px;font-family:'JetBrains Mono',monospace">Así se ve la grilla real — las columnas son los dispatchers, las filas son las horas:</p>
+  <div class="demo-grid-wrap">
+    <table class="demo-grid" aria-label="Ejemplo visual de grilla de horarios">
+      <thead>
+        <tr>
+          <th class="hora-th">HORA</th>
+          <th class="d-header" style="background:#27ae60;color:#fff">M005</th>
+          <th class="d-header" style="background:#e74c3c;color:#fff">F031</th>
+          <th class="d-header" style="background:#f39c12;color:#fff">R012</th>
+          <th class="d-header" style="background:#9b59b6;color:#fff">S029</th>
+          <th class="d-header" style="background:#e91e8c;color:#fff">F022</th>
+          <th class="d-header" style="background:#2980b9;color:#fff">I011</th>
+          <th class="d-header" style="background:#FFD200;color:#0a0a0a">D038</th>
+          <th class="d-header" style="background:#1abc9c;color:#fff">V026</th>
+          <th class="d-header" style="background:#e67e22;color:#fff">L047</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="hora-td">12:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">1:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">M</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">2:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">3:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">4:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb"></div></td></tr>
+        <tr><td class="hora-td">5:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A2</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb">A2</div></td></tr>
+        <tr><td class="hora-td">6:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A2</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb">MR</div></td></tr>
+        <tr><td class="hora-td">7:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">8:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">9:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr><td class="hora-td">10:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
+        <tr style="border-top:2px solid #FFD200"><td class="hora-td" style="color:#FFD200;font-weight:700">TOTAL</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">5</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">4</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">5</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DEMO GRID 2 — static block example with MR -->
+  <p style="color:#666;font-size:12px;margin:1rem 0 8px;font-family:'JetBrains Mono',monospace">Ejemplo de cómo se ve un bloque completo de 9 horas en tu columna — los bloques tienen 2 asignaturas, el resto solo color:</p>
+  <div class="demo-grid-wrap">
+    <table class="demo-grid" aria-label="Ejemplo de bloque con asignaturas">
+      <thead>
+        <tr>
+          <th class="hora-th">HORA</th>
+          <th class="d-header" style="background:#FFD200;color:#0a0a0a;font-size:11px">D038</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="hora-td">6:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MR</div></td></tr>
+        <tr><td class="hora-td">7:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
+        <tr><td class="hora-td">8:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
+        <tr><td class="hora-td">9:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
+        <tr><td class="hora-td">10:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
+        <tr><td class="hora-td" style="color:#555">11:00am</td><td class="block-td demo-empty"></td></tr>
+        <tr><td class="hora-td" style="color:#555">12:00pm</td><td class="block-td demo-empty"></td></tr>
+        <tr><td class="hora-td">1:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
+        <tr><td class="hora-td">2:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
+        <tr><td class="hora-td">3:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
+        <tr><td class="hora-td">4:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
+        <tr><td class="hora-td">5:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A2</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:5px;padding:9px 14px;font-size:12px;color:#555;font-family:'JetBrains Mono',monospace;margin-bottom:1.2rem;line-height:1.8">
+    <span style="color:#FFD200">→</span> En la <strong style="color:#e8e2d4">6:00am</strong> aparece <strong style="color:#00bcd4">MR</strong> = ese dispatcher empieza el bloque con mensajería RingCentral<br>
+    <span style="color:#FFD200">→</span> Las horas del bloque sin texto son simplemente continuación del mismo turno<br>
+    <span style="color:#FFD200">→</span> Las <strong style="color:#e8e2d4">11:00am y 12:00pm</strong> están vacías = es el espacio entre bloques<br>
+    <span style="color:#FFD200">→</span> A la <strong style="color:#e8e2d4">1:00pm</strong> empieza el segundo bloque (distinto color)<br>
+    <span style="color:#FFD200">→</span> En la <strong style="color:#e8e2d4">5:00pm</strong> aparece <strong style="color:#f39c12">A2</strong> = fin del bloque con asignatura
+  </div>
+
+  <!-- SIGLAS LEGEND -->
+  <p style="color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin-bottom:.7rem">Significado de las siglas en la grilla</p>
+  <div class="siglas-grid">
+    <div class="sigla-row">
+      <div class="sigla-badge" style="background:#27ae60;color:#fff">MR</div>
+      <div class="sigla-text"><strong>Mensajería RingCentral</strong> — durante esa hora completa el dispatcher se va a abocar exclusivamente en responder todos los mensajes entrantes en la mensajería de RingCentral.</div>
+    </div>
+    <div class="sigla-row">
+      <div class="sigla-badge" style="background:#00bcd4;color:#0a0a0a">MC</div>
+      <div class="sigla-text"><strong>Mensajería CallBell</strong> — el dispatcher atiende mensajes de WhatsApp en CallBell. El número que sigue (1 al 6) indica en cuál de las 6 líneas entra. Ej: <strong>MC3</strong> = línea 3.</div>
+    </div>
+    <div class="sigla-row">
+      <div class="sigla-badge" style="background:#f39c12;color:#0a0a0a">A1</div>
+      <div class="sigla-text"><strong>Asignador 1</strong> — el rol de asignación lo ocupa <strong>una sola persona</strong> durante esa hora. Solo lo tienen los dispatchers principales.</div>
+    </div>
+    <div class="sigla-row">
+      <div class="sigla-badge" style="background:#e67e22;color:#0a0a0a">A2</div>
+      <div class="sigla-text"><strong>Asignador 2</strong> — el rol de asignación lo ocupan <strong>dos personas al mismo tiempo</strong> durante esa hora. Ambos dispatchers comparten la responsabilidad de asignar servicios.</div>
+    </div>
+    <div class="sigla-row">
+      <div class="sigla-badge" style="background:#9b59b6;color:#fff">M</div>
+      <div class="sigla-text"><strong>Mensajería completa</strong> — el dispatcher cubre tanto <strong>MR</strong> (RingCentral) como <strong>MC</strong> (CallBell) al mismo tiempo durante ese horario.</div>
+    </div>
+  </div>
+
+
+  <div style="margin-top:1.2rem;background:#0f0c00;border:1px solid rgba(255,210,0,.3);border-left:3px solid #FFD200;border-radius:6px;padding:1rem 1.2rem">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FFD200;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;opacity:.8">⚠️ Importante</div>
+    <p style="font-size:13px;color:#9a9488;line-height:1.8">La importancia de <strong style="color:#e8e2d4">tomar la asignatura correspondiente en tiempo y forma</strong> es fundamental. También es bueno saber que nuestro <strong style="color:#e8e2d4">principal foco en la hora tiene que ser la asignatura</strong>, pero eso no quita el hecho de que si estamos con la bandeja de mensajes limpia podemos <strong style="color:#FFD200">apoyar a la base con lo que solicite el principal</strong> y/o podemos <strong style="color:#FFD200">ayudar devolviendo las llamadas perdidas</strong>.</p>
+  </div>
+
+</div>
 <div class="tl-divider-line"></div>
 
 
@@ -1296,7 +1444,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
               </div>
               <div class="zapp-list">
                 <!-- TaxiLaser General -->
-                <div class="zapp-list-item" onclick="openChannel('general')" onmouseenter="showTooltip('general',this)" onmouseleave="hideTooltip()">
+                <div class="zapp-list-item" onclick="openChannel('general')" >
                   <div class="zapp-avatar online" style="background:#1a1a0a;font-size:22px">🚖<div class="online-dot"></div></div>
                   <div class="zapp-item-info">
                     <div class="zapp-item-name">Taxi Laser LLC</div>
@@ -1305,7 +1453,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
                   <div class="zapp-msg-icon">💬</div>
                 </div>
                 <!-- Dispatchers -->
-                <div class="zapp-list-item" onclick="openChannel('dispatchers')" onmouseenter="showTooltip('dispatchers',this)" onmouseleave="hideTooltip()">
+                <div class="zapp-list-item" onclick="openChannel('dispatchers')" >
                   <div class="zapp-avatar online" style="background:#0a0a1a;font-size:22px">👮<div class="online-dot"></div></div>
                   <div class="zapp-item-info">
                     <div class="zapp-item-name">DISPATCHERS</div>
@@ -1424,7 +1572,19 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 
           </div><!-- end phone -->
         </div><!-- end outer -->
-        <div class="teams-hint" style="margin-top:6px">Explorá los grupos — pasá el cursor sobre TaxiLaserLLC o Dispatchers para ver para qué sirven · Abrí un grupo y tocá 💬 para ver el historial</div>
+        <div class="teams-hint" style="margin-top:6px">Abrí un grupo y tocá 💬 para ver el historial</div>
+      <div style="margin-top:8px;display:flex;flex-direction:column;gap:5px">
+        <div style="background:#0a0a0a;border:1px solid rgba(255,210,0,.18);border-left:3px solid #FFD200;border-radius:5px;padding:7px 10px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#FFD200;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px">🚖 Taxi Laser LLC — La General</div>
+          <div style="font-size:9px;color:#555;margin-bottom:2px">👮 Dispatchers: inicio/cierre sesión · 2 taxis · cooperación de zonas</div>
+          <div style="font-size:9px;color:#555">🚗 Drivers: pedir ayuda al Principal de turno</div>
+        </div>
+        <div style="background:#0a0a0a;border:1px solid rgba(98,100,167,.3);border-left:3px solid #6264a7;border-radius:5px;padding:7px 10px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#6264a7;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px">👮 Canal Dispatchers</div>
+          <div style="font-size:9px;color:#555;margin-bottom:2px">Apoyo · cambio de servicio · 10-20 · consultas operativas · 911</div>
+          <div style="font-size:9px;color:#e74c3c">⚠️ Todo queda grabado · solo por Zello</div>
+        </div>
+      </div>
       </div>
 
     </div>
@@ -1582,11 +1742,6 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     </div>
   </div>
 </div>
-
-
-
-
-
 <div class="tl-divider-line"></div>
 <!-- POPUP UNIDAD TAXICALLER -->
 <div class="tl-topic">
@@ -1707,9 +1862,6 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     Si el número es alto podemos comunicárselo al cliente y ofrecerle disculpas por la espera, o evaluar si conviene reasignar a una unidad más cercana.
   </div>
 </div>
-
-
-
 <div class="tl-divider-line"></div>
 <!-- CAMBIO DE SERVICIO -->
 <div class="tl-topic">
@@ -2308,28 +2460,122 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
   <div class="tl-section-label">Normativa operativa</div>
   <div class="tl-section-title">Sistema de multas 🚫</div>
   <div class="multas-intro" style="font-size:12px;margin-bottom:.8rem">Como Dispatchers tenemos la obligación de dar <strong>Warnings, Suspender y Multar</strong> a los drivers que incumplan las normativas.<br><br>Como primera instancia, si la unidad es nueva cometiendo una infracción se le da un <strong>Warning</strong>. Analizando su comportamiento puede pasar de un Warning a una <strong>Suspensión y multa</strong>.<br><br>Todas las unidades desde su entrenamiento conocen el <strong>sistema de multas</strong> y están de acuerdo. También cuentan con una hoja de <strong>Códigos de radio</strong> y un <strong>Tarifario</strong>.</div>
-  <div class="multas-grid">
-    <div class="multa-row"><div class="multa-icon">🔵</div><div class="multa-desc">Ceder el app a un tercero</div><div class="multa-amount high">$500 / persona</div></div>
-    <div class="multa-row"><div class="multa-icon">🚗</div><div class="multa-desc">Trabajar en vehículo distinto al registrado en sistema</div><div class="multa-amount">$100</div></div>
-    <div class="multa-row"><div class="multa-icon">👥</div><div class="multa-desc">Trabajar acompañado</div><div class="multa-amount">$100</div></div>
-    <div class="multa-row"><div class="multa-icon">👕</div><div class="multa-desc">Trabajar en short, franelilla o cotizas</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🕔</div><div class="multa-desc">Trabajar después de las 5pm del lunes sin haber pagado base</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🚘</div><div class="multa-desc">Vehículo sucio</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🔴</div><div class="multa-desc">Trabajar con una placa distinta a la registrada</div><div class="multa-amount">$50</div></div>
-    <div class="multa-row"><div class="multa-icon">📱</div><div class="multa-desc">Dar el número telefónico o tener clientes personales</div><div class="multa-amount high">$150</div></div>
-    <div class="multa-row"><div class="multa-icon">📵</div><div class="multa-desc">Hablar por teléfono con cliente a bordo</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🧳</div><div class="multa-desc">Maletero cargado</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🚫</div><div class="multa-desc">Negarse a inspección</div><div class="multa-amount">$100</div></div>
-    <div class="multa-row"><div class="multa-icon">❄️</div><div class="multa-desc">Trabajar sin aire acondicionado y/o calefacción</div><div class="multa-amount">$30</div></div>
-    <div class="multa-row"><div class="multa-icon">❌</div><div class="multa-desc">Cerrar el servicio en el 20 no correspondiente</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">💵</div><div class="multa-desc">No tener cambio</div><div class="multa-amount">$10</div></div>
-    <div class="multa-row"><div class="multa-icon">🏃</div><div class="multa-desc">No cerrar servicio y retirarse sin autorización</div><div class="multa-amount">$50</div></div>
-    <div class="multa-row"><div class="multa-icon">📍</div><div class="multa-desc">No salir 10-03 a un servicio</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🔧</div><div class="multa-desc">Revisión por falla mecánica</div><div class="multa-amount">$10</div></div>
-    <div class="multa-row"><div class="multa-icon">🏷️</div><div class="multa-desc">No hacer descuentos</div><div class="multa-amount">$50</div></div>
-    <div class="multa-row"><div class="multa-icon">⚠️</div><div class="multa-desc">Reclamos de cliente (motivos varios)</div><div class="multa-amount">$20</div></div>
-    <div class="multa-row"><div class="multa-icon">🔔</div><div class="multa-desc">Situaciones que ameriten warning</div><div class="multa-amount">$10</div></div>
-    <div class="multa-row"><div class="multa-icon">📡</div><div class="multa-desc">Desconectarse con servicio activo</div><div class="multa-amount">$5</div></div>
+  <div class="multas-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0">
+    <div class="multa-row">
+      <div class="multa-icon">⚠️</div>
+      <div class="multa-desc">Warning operativo</div>
+      <div class="multa-amount">$10</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📣</div>
+      <div class="multa-desc">Reclamo cliente</div>
+      <div class="multa-amount high">$20–$50</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">💰</div>
+      <div class="multa-desc">Cobros indebidos</div>
+      <div class="multa-amount">$50</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🔧</div>
+      <div class="multa-desc">Falla mecánica</div>
+      <div class="multa-amount">$10</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🚫</div>
+      <div class="multa-desc">Demorar o rechazar hacer un servicio después de aceptarlo</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">👤</div>
+      <div class="multa-desc">Cliente distinto</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🚕</div>
+      <div class="multa-desc">Dejar 10-5 compañero</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📍</div>
+      <div class="multa-desc">Error del destino</div>
+      <div class="multa-amount">$10</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📱</div>
+      <div class="multa-desc">Ceder el app a un tercero</div>
+      <div class="multa-amount high">$500 / persona</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🚗</div>
+      <div class="multa-desc">Vehículo distinto al sistema</div>
+      <div class="multa-amount high">$100</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">👥</div>
+      <div class="multa-desc">Trabajar acompañado</div>
+      <div class="multa-amount high">$100</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">👔</div>
+      <div class="multa-desc">Vestimenta indebida</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🧹</div>
+      <div class="multa-desc">Vehículo sucio</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🪪</div>
+      <div class="multa-desc">Placa distinta</div>
+      <div class="multa-amount">$50</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📲</div>
+      <div class="multa-desc">Dar servicios a nuestros clientes por fuera de la APP</div>
+      <div class="multa-amount high">$250</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🔍</div>
+      <div class="multa-desc">Negarse a inspección</div>
+      <div class="multa-amount high">$100</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🏃</div>
+      <div class="multa-desc">Retirarse del 20 sin autorización o cerrar servicio para no realizarlo</div>
+      <div class="multa-amount">$50</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">🪑</div>
+      <div class="multa-desc">Dejar 10-5 por no cargar silla para niños o boosters</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📚</div>
+      <div class="multa-desc">Re-entrenamiento</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">😤</div>
+      <div class="multa-desc">Irrespeto a base</div>
+      <div class="multa-amount">$50</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📋</div>
+      <div class="multa-desc">No responder copias</div>
+      <div class="multa-amount">$10</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">💸</div>
+      <div class="multa-desc">Daño pendiente</div>
+      <div class="multa-amount">$20</div>
+    </div>
+    <div class="multa-row">
+      <div class="multa-icon">📱</div>
+      <div class="multa-desc">Mal uso de aplicación</div>
+      <div class="multa-amount">$20–$30</div>
+    </div>
   </div>
   <div class="multas-warning"><strong>⚠️ Recordá:</strong> Conocé estas multas a la perfección para aplicarlas correctamente. Siempre documentar en <strong>Teams</strong> antes de proceder con cualquier sanción.</div>
 </div>
@@ -2535,6 +2781,11 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 
 
 
+
+
+
+
+
 <div class="tl-divider-line"></div>
 <!-- BUSCAR EN TAXICALLER -->
 <div class="tl-topic">
@@ -2691,6 +2942,9 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
   </div>
 
 </div>
+
+
+
 
 
 <div class="tl-divider-line"></div>
@@ -3207,12 +3461,10 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
   <div class="svc-pnl" id="sp-panel-pickup">
     <div style="background:#1a0e00;border:1px solid rgba(230,126,34,.3);border-left:3px solid #e67e22;border-radius:6px;padding:10px 14px;margin-bottom:10px">
       <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#e67e22;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px">🛻 Servicio de Pick Up — casilla: Pick-Up</div>
-      <div style="font-size:12.5px;color:#777;line-height:1.75;margin-bottom:8px">El extra depende del tamaño de lo que transporta. <strong style="color:#e8e2d4">Siempre consultar con el Principal de turno</strong> para determinar el extra ($10, $20 o $30). Marcamos la casilla Pick-Up y agregamos la info:</div>
+      <div style="font-size:12.5px;color:#777;line-height:1.75;margin-bottom:8px">El extra depende del tamaño de lo que transporta. <strong style="color:#e8e2d4">Siempre consultar con el Principal de turno</strong> para determinar el extra ($20 o $30). Marcamos la casilla Pick-Up y agregamos la info:</div>
       <div style="display:flex;flex-direction:column;gap:6px">
         <div style="background:#fff;border:1px solid #aab8c4;border-left:3px solid #e67e22;border-radius:3px;padding:5px 9px;font-size:10px;font-family:'JetBrains Mono',monospace;color:#222">
-          <span style="color:#555">1014</span> / WALMART / <strong style="color:#e67e22">SOLICITA PICK UP</strong> / TAXIMETRO CON DESCUENTO <strong style="color:#e74c3c">+$10 EXTRA</strong>
-        </div>
-        <div style="background:#fff;border:1px solid #aab8c4;border-left:3px solid #e67e22;border-radius:3px;padding:5px 9px;font-size:10px;font-family:'JetBrains Mono',monospace;color:#222">
+        <div style="display:none">
           <span style="color:#555">1014</span> / WALMART / <strong style="color:#e67e22">SOLICITA PICK UP</strong> / TAXIMETRO CON DESCUENTO <strong style="color:#e74c3c">+$20 EXTRA</strong>
         </div>
         <div style="background:#fff;border:1px solid #aab8c4;border-left:3px solid #e67e22;border-radius:3px;padding:5px 9px;font-size:10px;font-family:'JetBrains Mono',monospace;color:#222">
@@ -3220,7 +3472,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
         </div>
       </div>
       <div style="margin-top:8px;background:#0d0a00;border:1px solid rgba(255,150,0,.25);border-left:2px solid #ff9500;border-radius:4px;padding:7px 11px;font-size:11px;color:#7a6a44;font-family:'JetBrains Mono',monospace">
-        <strong style="color:#ff9500">⚠️ Siempre consultar el extra con el Principal</strong> — el monto ($10/$20/$30) depende del tamaño de la carga.
+        <strong style="color:#3498db">📸 Foto obligatoria antes de confirmar el extra</strong> — pedimos al cliente una foto de lo que va a transportar y se la enviamos al Principal o Manager. Ellos determinan si es <strong style="color:#e8e2d4">$20 o $30</strong> según el tamaño.<br><br><strong style="color:#ff9500">⚠️ No confirmar el monto sin foto primero.</strong>
       </div>
     </div>
   </div>
@@ -3776,7 +4028,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
   </div>
 
   <!-- TABS -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:10px">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:10px">
     <div class="svc-tab-btn svc-tab-on" id="unc-tab-mall" onclick="setUnc('mall')">
       <div class="svc-tab-title" style="color:#f39c12">🏬 Mall</div>
       <div class="svc-tab-sub">múltiples salidas</div>
@@ -3788,6 +4040,14 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     <div class="svc-tab-btn" id="unc-tab-hospital" onclick="setUnc('hospital')">
       <div class="svc-tab-title" style="color:#e74c3c">🏥 Hospital</div>
       <div class="svc-tab-sub">zonas específicas</div>
+      <div class="svc-tab-btn" id="unc-tab-escuela" onclick="setUnc('escuela')">
+      <div class="svc-tab-title" style="color:#3498db">🏫 Escuela</div>
+      <div class="svc-tab-sub">múltiples puntos</div>
+    </div>
+  </div>
+    <div class="svc-tab-btn" id="unc-tab-escuela" onclick="setUnc('escuela')">
+      <div class="svc-tab-title" style="color:#3498db">🏫 Escuela</div>
+      <div class="svc-tab-sub">múltiples puntos</div>
     </div>
   </div>
 
@@ -3978,7 +4238,17 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     </div>
   </div>
 
-  <!-- NOTA GENERAL -->
+  <div class="svc-pnl" id="unc-panel-escuela">
+    <div style="background:#000a1a;border:1px solid rgba(52,152,219,.3);border-left:3px solid #3498db;border-radius:8px;padding:10px 14px;margin-bottom:10px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#3498db;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px">🏫 Escuela — ejemplo: Meadowcreek High School</div>
+      <div style="font-size:12.5px;color:#777;line-height:1.75;margin-bottom:10px">Las escuelas tienen múltiples entradas, gimnasios, estadios y canchas separadas. Siempre consultamos exactamente en qué punto espera el cliente.</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px"><div><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#e74c3c;margin-bottom:4px">❌ MAL</div><div style="background:#fff5f5;border:1px solid #f5c6c6;border-left:3px solid #e74c3c;border-radius:3px;padding:5px 8px;font-size:10px;font-family:'JetBrains Mono',monospace;color:#c0392b">1014 / MEADOWCREEK HIGH SCHOOL</div></div><div><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#27ae60;margin-bottom:4px">✅ CORRECTO</div><div style="background:#f0fff4;border:1px solid #b2dfdb;border-left:3px solid #27ae60;border-radius:3px;padding:5px 8px;font-size:10px;font-family:'JetBrains Mono',monospace;color:#1a5a2a">1014 / MEADOWCREEK HIGH / ESPERA EN FRONT OFFICE</div></div></div>
+      <div style="background:#0f0c00;border:1px solid rgba(255,210,0,.2);border-radius:5px;padding:7px 11px;margin-bottom:6px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FFD200;margin-bottom:5px">Puntos comunes</div><div style="display:flex;flex-wrap:wrap;gap:4px"><span style="background:#1e2240;color:#8888cc;font-size:9px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace">Front Office</span><span style="background:#1e2240;color:#8888cc;font-size:9px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace">Gimnasio</span><span style="background:#1e2240;color:#8888cc;font-size:9px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace">Football Field</span><span style="background:#1e2240;color:#8888cc;font-size:9px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace">Canchas Soccer</span><span style="background:#1e2240;color:#8888cc;font-size:9px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace">Escaleras</span></div></div>
+      <div class="svc-tip">Le preguntamos: <strong>"¿Estás en el gym, el field, la oficina?"</strong> — cualquier referencia orienta al driver.</div>
+    </div>
+  </div>
+
+    <!-- NOTA GENERAL -->
   <div style="background:#0f0c00;border:1px solid rgba(255,210,0,.2);border-left:3px solid #FFD200;border-radius:6px;padding:10px 14px;font-size:12px;color:#7a6a44;line-height:1.75;font-family:'JetBrains Mono',monospace">
     <strong style="color:#FFD200">Regla de oro:</strong> Si el lugar tiene más de una entrada, salida o zona — <strong style="color:#e8e2d4">siempre preguntamos</strong>. Es mejor preguntar dos veces que enviar un driver a buscar al cliente por todo un mall, parque u hospital.
   </div>
@@ -5350,9 +5620,10 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 <div class="tl-topic">
   <div class="tl-section-label">Situaciones operativas</div>
   <div class="tl-section-title">Caucho pinchado 🛞</div>
-  <p style="color:#666;font-size:13px;margin-bottom:1rem;line-height:1.7">Cuando una unidad reporta un caucho pinchado, lo primero es saber <strong style="color:#e8e2d4">dónde sucedió</strong> — si estaba en el punto del cliente o si iba en camino al servicio.</p>
+  <p style="color:#666;font-size:13px;margin-bottom:1rem;line-height:1.7">Cuando una unidad reporta un caucho pinchado, lo primero es saber <strong style="color:#e8e2d4">dónde sucedió</strong> — si ya estaba en el punto de recogida o si estaba en camino al servicio. El protocolo cambia según el caso.</p>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1rem">
+  <!-- TABS -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px">
     <div class="svc-tab-btn svc-tab-on" id="flat-tab-punto" onclick="setFlat('punto')">
       <div class="svc-tab-title" style="color:#27ae60;font-size:.9rem">📍 Pinchó en el 10-20</div>
       <div class="svc-tab-sub">ya había llegado al cliente</div>
@@ -5365,10 +5636,10 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 
   <!-- PANEL PUNTO -->
   <div class="svc-pnl svc-pnl-on" id="flat-panel-punto">
-    <div style="background:#0a1a0a;border:1px solid rgba(39,174,96,.3);border-left:3px solid #27ae60;border-radius:8px;padding:10px 14px">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#27ae60;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">📍 Pinchó en el punto del cliente</div>
+    <div style="background:#0a1a0a;border:1px solid rgba(39,174,96,.3);border-left:3px solid #27ae60;border-radius:8px;padding:10px 14px;margin-bottom:10px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#27ae60;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">📍 Pinchó fuera del 10-20 — situación verificable</div>
       <div style="font-size:12.5px;color:#777;line-height:1.75;margin-bottom:10px">
-        La unidad llegó al cliente y pinchó allí. Es la situación más fácil de verificar.
+        La unidad ya había llegado al punto del cliente y pinchó allí. Es una situación más clara y verificable.
       </div>
       <div style="display:flex;flex-direction:column;gap:7px">
         <div style="display:flex;gap:10px;align-items:flex-start">
@@ -5377,30 +5648,29 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#27ae60;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">2</span>
-          <span style="font-size:12px;color:#888;line-height:1.6">Le pedimos a la unidad una <strong style="color:#e8e2d4">foto del caucho pinchado</strong> como comprobante.</span>
+          <span style="font-size:12px;color:#888;line-height:1.6">Le pedimos a la unidad que nos envíe una <strong style="color:#e8e2d4">foto de comprobante</strong> del caucho pinchado.</span>
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#27ae60;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">3</span>
-          <span style="font-size:12px;color:#888;line-height:1.6">Le indicamos que se <strong style="color:#e8e2d4">desconecte del sistema</strong>.</span>
+          <span style="font-size:12px;color:#888;line-height:1.6">Le indicamos que se <strong style="color:#e8e2d4">desconecte</strong> del sistema.</span>
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#2ecc71;color:#0a0a0a;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">4</span>
-          <span style="font-size:12px;color:#888;line-height:1.6">Una vez que arregle el caucho, puede <strong style="color:#e8e2d4">volver a conectarse</strong> sin límite de tiempo.</span>
+          <span style="font-size:12px;color:#888;line-height:1.6">Una vez arregle el caucho, puede <strong style="color:#e8e2d4">volver a conectarse</strong> con normalidad.</span>
         </div>
       </div>
-      <div class="svc-tip" style="margin-top:8px"><strong>📸 Foto obligatoria</strong> — siempre pedimos imagen del caucho antes de autorizar la desconexión.</div>
     </div>
   </div>
 
   <!-- PANEL CAMINO -->
   <div class="svc-pnl" id="flat-panel-camino">
-    <div style="background:#1a0000;border:1px solid rgba(231,76,60,.3);border-left:3px solid #e74c3c;border-radius:8px;padding:10px 14px">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#e74c3c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">🛣️ Pinchó yendo al servicio (10-03)</div>
+    <div style="background:#1a0000;border:1px solid rgba(231,76,60,.3);border-left:3px solid #e74c3c;border-radius:8px;padding:10px 14px;margin-bottom:10px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#e74c3c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">🛣️ Pinchó en camino (10-03) — protocolo más estricto</div>
       <div style="font-size:12.5px;color:#777;line-height:1.75;margin-bottom:10px">
-        La unidad dice que pinchó en camino al servicio. No podemos verificarlo directamente — puede ser real o puede ser una excusa para no hacer un viaje lejano. Por eso el protocolo es más estricto.
+        La unidad dice que pinchó yendo al servicio. En este caso <strong style="color:#e8e2d4">no hay forma de verificar</strong> si es verdad o si lo usó como excusa para no hacer un servicio lejano. Por eso aplicamos un protocolo más estricto.
       </div>
       <div style="background:#0d0a00;border:1px solid rgba(255,150,0,.25);border-left:2px solid #ff9500;border-radius:4px;padding:7px 11px;font-size:11px;color:#7a6a44;font-family:'JetBrains Mono',monospace;margin-bottom:10px;line-height:1.6">
-        <strong style="color:#ff9500">⚠️</strong> No tenemos forma de confirmar si el caucho fue real o fue excusa para evitar el servicio.
+        <strong style="color:#ff9500">⚠️ No hay forma de confirmar</strong> si el caucho fue real o fue una excusa para evitar el servicio.
       </div>
       <div style="display:flex;flex-direction:column;gap:7px">
         <div style="display:flex;gap:10px;align-items:flex-start">
@@ -5409,143 +5679,25 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#e74c3c;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">2</span>
-          <span style="font-size:12px;color:#888;line-height:1.6">Le pedimos un <strong style="color:#e8e2d4">video o foto de comprobante</strong> del caucho pinchado.</span>
+          <span style="font-size:12px;color:#888;line-height:1.6">Le pedimos que se <strong style="color:#e8e2d4">desconecte del sistema</strong>.</span>
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#e74c3c;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">3</span>
-          <span style="font-size:12px;color:#888;line-height:1.6">Le indicamos que se <strong style="color:#e8e2d4">desconecte del sistema</strong>.</span>
+          <span style="font-size:12px;color:#888;line-height:1.6">Le pedimos un <strong style="color:#e8e2d4">video de prueba</strong> del caucho pinchado como comprobante.</span>
         </div>
         <div style="display:flex;gap:10px;align-items:flex-start">
           <span style="background:#2ecc71;color:#0a0a0a;font-family:'Bebas Neue',sans-serif;font-size:.85rem;padding:1px 8px;border-radius:3px;flex-shrink:0">4</span>
           <span style="font-size:12px;color:#888;line-height:1.6">Una vez que arregle el caucho y envíe el comprobante, puede <strong style="color:#e8e2d4">volver a conectarse</strong>.</span>
         </div>
       </div>
-      <div class="svc-tip" style="margin-top:8px"><strong>Diferencia clave:</strong> En el 10-20 pedimos <strong>foto</strong>. En camino (10-03) pedimos <strong>video o foto</strong> — el comprobante siempre es obligatorio antes de reconectarse.</div>
+      <div class="svc-tip" style="margin-top:10px"><strong>Diferencia clave:</strong> Foto de comprobante cuando pinchó en el punto del cliente → Video de prueba cuando pinchó yendo al servicio.</div>
     </div>
   </div>
-
 </div>
 
-<div class="tl-divider-line"></div>
-<!-- GRILLA DE HORARIOS EXPLICADA -->
-<div class="tl-topic">
-  <div class="tl-section-label">Flujo de trabajo</div>
-  <div class="tl-section-title">Como leer la grilla de horarios</div>
-
-  <div class="sched-explain">
-    <div class="sched-explain-header">¿Cómo funciona la grilla?</div>
-    <div class="sched-explain-body">
-      <div style="background:#0d0a00;border:1px solid rgba(255,150,0,.3);border-left:3px solid #ff9500;border-radius:5px;padding:7px 12px;font-size:11px;color:#ff9500;font-family:'JetBrains Mono',monospace;letter-spacing:.05em;margin-bottom:10px">
-        ⚠️ <strong style="color:#ffb347">Importante:</strong> Todos los horarios de la grilla están basados en la <strong style="color:#FFD200">Hora de Atlanta (ET — Eastern Time)</strong>. Verificá siempre que tu reloj esté en hora de Atlanta antes de checar tu bloque.
-      </div>
-      La grilla de horarios se abre en el <strong>Excel semanal</strong> todos los días antes de arrancar el turno. Para leerla tenés que hacer dos cosas:<br><br>
-      <span class="hl">1.</span> Buscá tu <strong>número de dispatcher</strong> en la fila de arriba (por ejemplo <strong>D038</strong>).<br>
-      <span class="hl">2.</span> Cruzá tu columna con la <strong>hora actual</strong> en la columna de la izquierda.<br><br>
-      Las casillas con color son tus <strong>bloques de trabajo activos</strong>. Las casillas vacías (sin color) significan que en esa hora no tenés bloque. Donde termina el color, <strong>termina el bloque</strong>.
-    </div>
-  </div>
-
-  <!-- DEMO GRID 1 — visual example like the photo -->
-  <p style="color:#666;font-size:12px;margin-bottom:8px;font-family:'JetBrains Mono',monospace">Así se ve la grilla real — las columnas son los dispatchers, las filas son las horas:</p>
-  <div class="demo-grid-wrap">
-    <table class="demo-grid" aria-label="Ejemplo visual de grilla de horarios">
-      <thead>
-        <tr>
-          <th class="hora-th">HORA</th>
-          <th class="d-header" style="background:#27ae60;color:#fff">M005</th>
-          <th class="d-header" style="background:#e74c3c;color:#fff">F031</th>
-          <th class="d-header" style="background:#f39c12;color:#fff">R012</th>
-          <th class="d-header" style="background:#9b59b6;color:#fff">S029</th>
-          <th class="d-header" style="background:#e91e8c;color:#fff">F022</th>
-          <th class="d-header" style="background:#2980b9;color:#fff">I011</th>
-          <th class="d-header" style="background:#FFD200;color:#0a0a0a">D038</th>
-          <th class="d-header" style="background:#1abc9c;color:#fff">V026</th>
-          <th class="d-header" style="background:#e67e22;color:#fff">L047</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="hora-td">12:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">1:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">M</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">2:00am</td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#2980b9;color:#fff">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">3:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">4:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb"></div></td></tr>
-        <tr><td class="hora-td">5:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A2</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb">A2</div></td></tr>
-        <tr><td class="hora-td">6:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A2</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#87ceeb">MR</div></td></tr>
-        <tr><td class="hora-td">7:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A1</div></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#e67e22">A1</div></td><td class="block-td"><div class="demo-cell" style="background:#8bc34a">A</div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">8:00am</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">9:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr><td class="hora-td">10:00am</td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"></td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MC1</div></td><td class="block-td"></td><td class="block-td"></td></tr>
-        <tr style="border-top:2px solid #FFD200"><td class="hora-td" style="color:#FFD200;font-weight:700">TOTAL</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">5</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">4</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">5</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#555;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">0</td><td class="block-td" style="background:#0d0d0d;text-align:center;color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px">3</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- DEMO GRID 2 — static block example with MR -->
-  <p style="color:#666;font-size:12px;margin:1rem 0 8px;font-family:'JetBrains Mono',monospace">Ejemplo de cómo se ve un bloque completo de 9 horas en tu columna — los bloques tienen 2 asignaturas, el resto solo color:</p>
-  <div class="demo-grid-wrap">
-    <table class="demo-grid" aria-label="Ejemplo de bloque con asignaturas">
-      <thead>
-        <tr>
-          <th class="hora-th">HORA</th>
-          <th class="d-header" style="background:#FFD200;color:#0a0a0a;font-size:11px">D038</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="hora-td">6:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4">MR</div></td></tr>
-        <tr><td class="hora-td">7:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
-        <tr><td class="hora-td">8:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
-        <tr><td class="hora-td">9:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
-        <tr><td class="hora-td">10:00am</td><td class="block-td"><div class="demo-cell" style="background:#00bcd4"></div></td></tr>
-        <tr><td class="hora-td" style="color:#555">11:00am</td><td class="block-td demo-empty"></td></tr>
-        <tr><td class="hora-td" style="color:#555">12:00pm</td><td class="block-td demo-empty"></td></tr>
-        <tr><td class="hora-td">1:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
-        <tr><td class="hora-td">2:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
-        <tr><td class="hora-td">3:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
-        <tr><td class="hora-td">4:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12"></div></td></tr>
-        <tr><td class="hora-td">5:00pm</td><td class="block-td"><div class="demo-cell" style="background:#f39c12">A2</div></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div style="background:#0d0d0d;border:1px solid #1a1a1a;border-radius:5px;padding:9px 14px;font-size:12px;color:#555;font-family:'JetBrains Mono',monospace;margin-bottom:1.2rem;line-height:1.8">
-    <span style="color:#FFD200">→</span> En la <strong style="color:#e8e2d4">6:00am</strong> aparece <strong style="color:#00bcd4">MR</strong> = ese dispatcher empieza el bloque con mensajería RingCentral<br>
-    <span style="color:#FFD200">→</span> Las horas del bloque sin texto son simplemente continuación del mismo turno<br>
-    <span style="color:#FFD200">→</span> Las <strong style="color:#e8e2d4">11:00am y 12:00pm</strong> están vacías = es el espacio entre bloques<br>
-    <span style="color:#FFD200">→</span> A la <strong style="color:#e8e2d4">1:00pm</strong> empieza el segundo bloque (distinto color)<br>
-    <span style="color:#FFD200">→</span> En la <strong style="color:#e8e2d4">5:00pm</strong> aparece <strong style="color:#f39c12">A2</strong> = fin del bloque con asignatura
-  </div>
-
-  <!-- SIGLAS LEGEND -->
-  <p style="color:#FFD200;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin-bottom:.7rem">Significado de las siglas en la grilla</p>
-  <div class="siglas-grid">
-    <div class="sigla-row">
-      <div class="sigla-badge" style="background:#27ae60;color:#fff">MR</div>
-      <div class="sigla-text"><strong>Mensajería RingCentral</strong> — durante esa hora completa el dispatcher se va a abocar exclusivamente en responder todos los mensajes entrantes en la mensajería de RingCentral.</div>
-    </div>
-    <div class="sigla-row">
-      <div class="sigla-badge" style="background:#00bcd4;color:#0a0a0a">MC</div>
-      <div class="sigla-text"><strong>Mensajería CallBell</strong> — el dispatcher atiende mensajes de WhatsApp en CallBell. El número que sigue (1 al 6) indica en cuál de las 6 líneas entra. Ej: <strong>MC3</strong> = línea 3.</div>
-    </div>
-    <div class="sigla-row">
-      <div class="sigla-badge" style="background:#f39c12;color:#0a0a0a">A1</div>
-      <div class="sigla-text"><strong>Asignador 1</strong> — el rol de asignación lo ocupa <strong>una sola persona</strong> durante esa hora. Solo lo tienen los dispatchers principales.</div>
-    </div>
-    <div class="sigla-row">
-      <div class="sigla-badge" style="background:#e67e22;color:#0a0a0a">A2</div>
-      <div class="sigla-text"><strong>Asignador 2</strong> — el rol de asignación lo ocupan <strong>dos personas al mismo tiempo</strong> durante esa hora. Ambos dispatchers comparten la responsabilidad de asignar servicios.</div>
-    </div>
-    <div class="sigla-row">
-      <div class="sigla-badge" style="background:#9b59b6;color:#fff">M</div>
-      <div class="sigla-text"><strong>Mensajería completa</strong> — el dispatcher cubre tanto <strong>MR</strong> (RingCentral) como <strong>MC</strong> (CallBell) al mismo tiempo durante ese horario.</div>
-    </div>
-  </div>
 
 
-  <div style="margin-top:1.2rem;background:#0f0c00;border:1px solid rgba(255,210,0,.3);border-left:3px solid #FFD200;border-radius:6px;padding:1rem 1.2rem">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FFD200;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;opacity:.8">⚠️ Importante</div>
-    <p style="font-size:13px;color:#9a9488;line-height:1.8">La importancia de <strong style="color:#e8e2d4">tomar la asignatura correspondiente en tiempo y forma</strong> es fundamental. También es bueno saber que nuestro <strong style="color:#e8e2d4">principal foco en la hora tiene que ser la asignatura</strong>, pero eso no quita el hecho de que si estamos con la bandeja de mensajes limpia podemos <strong style="color:#FFD200">apoyar a la base con lo que solicite el principal</strong> y/o podemos <strong style="color:#FFD200">ayudar devolviendo las llamadas perdidas</strong>.</p>
-  </div>
 
-</div>
 
 
 
@@ -5922,7 +6074,7 @@ setInterval(updateZappClock, 10000);
 function checkPw() {
   var input = document.getElementById('pwInput');
   var err = document.getElementById('pwErr');
-  if (input.value === '160626') {
+  if (input.value === 'Laser1234') {
     document.getElementById('pwOverlay').style.display = 'none';
     document.body.style.overflow = '';
   } else {
@@ -6116,7 +6268,7 @@ function setSrch(opt) {
 
 // UNCOMMON SERVICES TABS
 function setUnc(opt) {
-  ['mall','parque','hospital'].forEach(function(o) {
+  ['mall','parque','hospital','escuela'].forEach(function(o) {
     var t = document.getElementById('unc-tab-'+o);
     var p = document.getElementById('unc-panel-'+o);
     if (t) t.classList.remove('svc-tab-on');
