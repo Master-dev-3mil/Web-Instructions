@@ -46,8 +46,8 @@
 .tl-app-desc{color:#888;font-size:13.5px;line-height:1.75;margin:1rem 0 .8rem;padding-left:46px}
 .tl-app-uses{padding-left:46px;display:flex;flex-wrap:wrap;gap:6px}
 .tl-use-pill{font-size:11px;font-family:'JetBrains Mono',monospace;background:#161616;color:#777;border:1px solid #252525;padding:3px 10px;border-radius:20px;letter-spacing:.04em}
-.tl-teramind-note{margin:.8rem 0 0 46px;background:#0d0a00;border:1px solid rgba(255,150,0,.2);border-left:2px solid #ff9500;border-radius:4px;padding:.7rem 1rem;font-size:12px;color:#7a6a55;line-height:1.6}
-.tl-teramind-note strong{color:#ff9500}
+.tl-insightful-note{margin:.8rem 0 0 46px;background:#0d0a00;border:1px solid rgba(255,150,0,.2);border-left:2px solid #ff9500;border-radius:4px;padding:.7rem 1rem;font-size:12px;color:#7a6a55;line-height:1.6}
+.tl-insightful-note strong{color:#ff9500}
 .tl-divider-line{height:1px;background:linear-gradient(90deg,transparent,#252525 30%,#252525 70%,transparent)}
 .tl-footer{padding:2rem;text-align:center;border-top:1px solid #1a1a1a}
 .tl-footer p{font-family:'JetBrains Mono',monospace;font-size:11px;color:#333;letter-spacing:.08em}
@@ -653,36 +653,7 @@
 .svc-pnl.svc-pnl-on{display:block}
 
 
-/* Teramind simulator */
-.tera-wrap{display:flex;justify-content:center;margin:1rem 0}
-.tera-window{width:240px;background:#f5f5f5;border:1px solid #c0c0c0;border-radius:4px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.35);font-family:'DM Sans',sans-serif}
-.tera-titlebar{background:#2a2a2a;color:#fff;padding:7px 10px;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:500}
-.tera-titlebar-icon{font-size:13px}
-.tera-titlebar-close{margin-left:auto;cursor:pointer;font-size:12px;color:#aaa;background:none;border:none}
-.tera-status-box{background:#fff;border:1px solid #c0c0c0;border-radius:3px;margin:10px 10px 6px;padding:8px 12px;font-size:13px;font-weight:600;color:#333;text-align:left}
-.tera-status-box.active{color:#2a7a2a}
-.tera-start-btn{display:block;width:calc(100% - 20px);margin:0 10px 10px;padding:8px;background:#c0c0c0;border:none;border-radius:3px;font-size:13px;font-weight:600;color:#fff;cursor:pointer;transition:background .2s,transform .1s}
-.tera-start-btn.running{background:#27ae60;color:#fff}
-.tera-start-btn.running:hover{background:#229954}
-.tera-start-btn:not(.running):hover{background:#aaa}
-.tera-tabs{display:flex;border-bottom:1px solid #c0c0c0;margin-bottom:0}
-.tera-tab{flex:1;padding:7px 0;text-align:center;font-size:11px;font-weight:600;cursor:pointer;border:none;background:#e0e0e0;color:#555;transition:all .15s}
-.tera-tab.active{background:#f39c12;color:#fff}
-.tera-search{margin:8px 10px;background:#fff;border:1px solid #c0c0c0;border-radius:3px;padding:5px 10px;font-size:11px;color:#888;width:calc(100% - 20px);box-sizing:border-box;outline:none}
-.tera-project{display:flex;align-items:center;gap:6px;padding:5px 10px;font-size:11px;color:#333}
-.tera-project input{width:14px;height:14px;accent-color:#f39c12;cursor:pointer}
-.tera-project-icon{font-size:14px}
-.tera-task{display:flex;align-items:center;gap:6px;padding:4px 10px 4px 32px;font-size:11px;color:#333}
-.tera-task-icon{font-size:12px}
-.tera-task-name{flex:1}
-.tera-task-play{background:#27ae60;border:none;border-radius:50%;width:22px;height:22px;color:#fff;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;flex-shrink:0}
-.tera-task-play.recording{background:#e74c3c;animation:tera-rec .8s infinite}
 @keyframes tera-rec{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-.tera-task-play:hover{opacity:.85}
-.tera-version{background:#2a2a2a;color:#888;padding:5px 10px;font-size:9px;font-family:'JetBrains Mono',monospace;display:flex;justify-content:space-between;align-items:center}
-.tera-rec-indicator{display:none;align-items:center;gap:6px;padding:4px 10px 8px;font-size:10px;color:#e74c3c;font-family:'JetBrains Mono',monospace}
-.tera-rec-indicator.visible{display:flex}
-.tera-rec-dot{width:8px;height:8px;border-radius:50%;background:#e74c3c;animation:tera-rec .8s infinite}
 
 
 /* ── RINGCENTRAL MOCK ─────────────────────────────── */
@@ -850,7 +821,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
   <button class="nav-item" onclick="navGoIdx(0)">Requisitos del puesto</button>
   <button class="nav-item" onclick="navGoIdx(1)">Las aplicaciones</button>
   <button class="nav-item" onclick="navGoIdx(2)">Como iniciar Turno</button>
-  <button class="nav-item" onclick="navGoIdx(3)">Iniciar Teramind 👁️</button>
+  <button class="nav-item" onclick="navGoIdx(3)">Iniciar Insightful ⏱️</button>
   <button class="nav-item" onclick="navGoIdx(4)">Códigos Zello</button>
   <button class="nav-item" onclick="navGoIdx(5)">Cómo buscar en Zello 📻</button>
   <button class="nav-item" onclick="navGoIdx(6)">Cómo pedir un cambio de servicio 🔁</button>
@@ -949,7 +920,7 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
     <div class="tl-app-row" id="app-ringcentral"><button class="tl-app-toggle" onclick="toggleApp('ringcentral')"><div class="tl-app-emoji">📞</div><div class="tl-app-name">RingCentral</div><div class="tl-app-tag">Llamadas</div><div class="tl-arrow">▼</div></button><div class="tl-app-body"><p class="tl-app-desc">Sistema telefónico. Por acá entran todas las llamadas de clientes de Atlanta. Atendés, tomás los datos y cargás el servicio en TaxiCaller.</p><div class="tl-app-uses"><span class="tl-use-pill">Llamadas entrantes</span><span class="tl-use-pill">Registro de pedidos</span><span class="tl-use-pill">Historial</span></div><a class="app-dl-btn app-dl-download" href="https://app.ringcentral.com/login" target="_blank" rel="noopener">⬇️ Descargar RingCentral</a></div></div>
     <div class="tl-app-row" id="app-callbell"><button class="tl-app-toggle" onclick="toggleApp('callbell')"><div class="tl-app-emoji">💬</div><div class="tl-app-name">CallBell</div><div class="tl-app-tag">WhatsApp</div><div class="tl-arrow">▼</div></button><div class="tl-app-body"><p class="tl-app-desc">Centraliza los mensajes de WhatsApp. Respondés, confirmás dirección y cargás en TaxiCaller.</p><div class="tl-app-uses"><span class="tl-use-pill">Pedidos por WhatsApp</span><span class="tl-use-pill">Seguimiento de chats</span></div><a class="app-dl-btn app-dl-web" href="https://dash.callbell.eu/users/sign_in" target="_blank" rel="noopener">🌐 Abrir CallBell</a></div></div>
     <div class="tl-app-row" id="app-teams"><button class="tl-app-toggle" onclick="toggleApp('teams')"><div class="tl-app-emoji">🗂️</div><div class="tl-app-name">Microsoft Teams</div><div class="tl-app-tag">Documentación</div><div class="tl-arrow">▼</div></button><div class="tl-app-body"><p class="tl-app-desc">Canal interno. Documentación de problemas, soluciones, charlas operativas y Check-In / Check-Out de cada turno.</p><div class="tl-app-uses"><span class="tl-use-pill">Check-In / Check-Out</span><span class="tl-use-pill">Registro de incidentes</span><span class="tl-use-pill">Comunicación con superiores</span></div><a class="app-dl-btn app-dl-download" href="https://microsoft-teams.softonic.com/?utm_source=SEM&utm_medium=paid&utm_campaign=ES_LATAM_DSA_HKD_HUF&s4p=1&gad_source=1&gad_campaignid=20922656616&gbraid=0AAAAAC5PVT4RycXvuz5VCOSD6jm1uKwYW&gclid=CjwKCAjwn4vQBhBsEiwAq3hhN6Twuld05c3tjofjsGHOsFRx0yHf-tzlARBq6DwEaIptZRhNF1IXShoCajoQAvD_BwE" target="_blank" rel="noopener">⬇️ Descargar Microsoft Teams</a></div></div>
-    <div class="tl-app-row" id="app-teramind"><button class="tl-app-toggle" onclick="toggleApp('teramind')"><div class="tl-app-emoji">👁️</div><div class="tl-app-name">Teramind</div><div class="tl-app-tag">Monitoreo</div><div class="tl-arrow">▼</div></button><div class="tl-app-body"><p class="tl-app-desc">Sistema de monitoreo laboral. Registra toda la actividad en tu computadora durante el turno. Corre en segundo plano siempre.</p><div class="tl-app-uses"><span class="tl-use-pill">Seguimiento de actividad</span><span class="tl-use-pill">Supervisión remota</span></div><div class="tl-teramind-note"><strong>Recordá:</strong> Teramind está activo todo el turno. Usá el equipo solo para tareas de la operación.</div><span class="app-dl-btn app-dl-locked">🔒 Solo con invitación de ADM</span></div></div>
+    <div class="tl-app-row" id="app-insightful"><button class="tl-app-toggle" onclick="toggleApp('insightful')"><div class="tl-app-emoji">👁️</div><div class="tl-app-name">Insightful</div><div class="tl-app-tag">Monitoreo</div><div class="tl-arrow">▼</div></button><div class="tl-app-body"><p class="tl-app-desc">Sistema de monitoreo laboral. Registra toda la actividad en tu computadora durante el turno. Corre en segundo plano siempre.</p><div class="tl-app-uses"><span class="tl-use-pill">Seguimiento de actividad</span><span class="tl-use-pill">Supervisión remota</span></div><div class="tl-insightful-note"><strong>Recordá:</strong> Insightful está activo todo el turno. Usá el equipo solo para tareas de la operación.</div><span class="app-dl-btn app-dl-locked">🔒 Solo con invitación de ADM</span></div></div>
   </div>
 </div>
 
@@ -1323,63 +1294,95 @@ html, body { background: #0a0a0a; color: #e8e2d4; }
 
       
 <div class="tl-divider-line"></div>
-<!-- TERAMIND SIMULATOR -->
+<!-- INSIGHTFUL -->
 <div class="tl-topic">
-  <div class="tl-section-label">Herramientas — Teramind</div>
-  <div class="tl-section-title">Iniciar Teramind 👁️</div>
-  <p style="color:#666;font-size:13px;margin-bottom:1rem;line-height:1.7">Teramind debe estar activo durante todo el turno. Podés iniciarlo clickeando <strong style="color:#FFD200">Start</strong> o desde la tarea directamente con el botón de <strong style="color:#27ae60">play</strong>.</p>
+  <div class="tl-section-label">Herramientas — Monitoreo</div>
+  <div class="tl-section-title">Iniciar Insightful ⏱️</div>
+  <p style="color:#666;font-size:13px;margin-bottom:1.2rem;line-height:1.7">Insightful es la app de monitoreo y control de horas de trabajo. Registramos el inicio y fin de cada turno con <strong style="color:#e8e2d4">Clock In / Clock Out</strong>. Tiene dos tabs: <strong style="color:#e8e2d4">Attendance</strong> para fichaje y <strong style="color:#e8e2d4">Time Tracking</strong> para ver el detalle.</p>
 
-  <div class="apt-hint" style="margin-bottom:1rem">
-    <span class="dlv-hl">Dos formas de iniciarlo:</span> botón <strong>Start</strong> en la parte superior, o el botón ▶ al lado de <strong>My task</strong>.
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem">
+
+    <!-- Clock In panel -->
+    <div style="background:#0a0a1a;border:1px solid rgba(99,102,241,.3);border-left:3px solid #6366f1;border-radius:8px;overflow:hidden">
+      <div style="padding:8px 12px;border-bottom:1px solid rgba(99,102,241,.15)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#6366f1;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px">Al iniciar turno</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#6366f1;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">1</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Abrimos la app <strong style="color:#e8e2d4">Insightful</strong> en la computadora.</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#6366f1;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">2</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Vamos al tab <strong style="color:#e8e2d4">Attendance</strong>.</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#27ae60;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">3</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Clickeamos el botón <strong style="color:#6366f1">Clock In</strong>.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Mock Clock In -->
+      <div style="background:#f8f8ff;padding:12px;text-align:center">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#6366f1;letter-spacing:.1em;margin-bottom:4px">Sat, Jul 04, 2026</div>
+        <div style="font-size:22px;font-weight:700;color:#111;letter-spacing:-.02em;margin-bottom:2px">00:00:00 h</div>
+        <div style="font-size:10px;color:#888;margin-bottom:10px">Not Started Yet</div>
+        <div style="background:#6366f1;color:#fff;border-radius:6px;padding:8px 0;font-size:12px;font-weight:600;cursor:pointer">Clock In</div>
+      </div>
+    </div>
+
+    <!-- Clock Out panel -->
+    <div style="background:#1a0a00;border:1px solid rgba(249,115,22,.3);border-left:3px solid #f97316;border-radius:8px;overflow:hidden">
+      <div style="padding:8px 12px;border-bottom:1px solid rgba(249,115,22,.15)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#f97316;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px">Al terminar turno</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#f97316;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">1</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Terminado el turno, abrimos <strong style="color:#e8e2d4">Insightful</strong>.</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#f97316;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">2</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Vamos al tab <strong style="color:#e8e2d4">Attendance</strong>.</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="background:#e74c3c;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.8rem;padding:1px 7px;border-radius:3px;flex-shrink:0">3</span>
+            <span style="font-size:11px;color:#888;line-height:1.6">Clickeamos el botón <strong style="color:#f97316">Clock Out</strong>.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Mock Clock Out -->
+      <div style="background:#f8f8ff;padding:12px;text-align:center">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#6366f1;letter-spacing:.1em;margin-bottom:4px">Sat, Jul 04, 2026</div>
+        <div style="font-size:22px;font-weight:700;color:#111;letter-spacing:-.02em;margin-bottom:2px">08:08:17 h</div>
+        <div style="font-size:10px;color:#888;margin-bottom:10px">Started at 05:24 PM</div>
+        <div style="background:#f97316;color:#fff;border-radius:6px;padding:8px 0;font-size:12px;font-weight:600;cursor:pointer">Clock Out</div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="tera-wrap">
-    <div class="tera-window">
-      <!-- title bar -->
-      <div class="tera-titlebar">
-        <span class="tera-titlebar-icon">T</span>
-        <span>Teramind Agent</span>
-        <button class="tera-titlebar-close">✕</button>
+  <!-- Historial -->
+  <div style="background:#0f0f0f;border:1px solid #1a1a1a;border-radius:8px;padding:10px 14px;margin-bottom:10px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#555;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">Historial de entradas — así se ve</div>
+    <div style="background:#fff;border-radius:6px;overflow:hidden;font-family:'DM Sans',sans-serif">
+      <div style="padding:6px 12px;background:#f5f5f5;border-bottom:1px solid #eee;display:flex;justify-content:space-between;font-size:10px;color:#555">
+        <span style="font-weight:600">Today</span><span style="color:#6366f1;font-weight:600">08:08:17 h</span>
       </div>
-      <!-- status -->
-      <div class="tera-status-box" id="tera-status">Not active</div>
-      <!-- start button -->
-      <button class="tera-start-btn" id="tera-start-btn" onclick="teraToggle()">Start</button>
-      <!-- recording indicator -->
-      <div class="tera-rec-indicator" id="tera-rec-indicator">
-        <div class="tera-rec-dot"></div>
-        <span>Grabando actividad...</span>
+      <div style="padding:8px 12px;border-bottom:1px solid #f0f0f0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;align-items:center">
+        <div><div style="font-size:9px;color:#888">Clock In</div><div style="font-size:12px;font-weight:700;color:#111">12:59 PM</div></div>
+        <div><div style="font-size:9px;color:#888">Clock Out</div><div style="font-size:12px;font-weight:700;color:#111">04:03 PM</div></div>
+        <div style="text-align:right;font-size:12px;color:#6366f1;font-weight:600">03:04:17 h</div>
       </div>
-      <!-- tabs -->
-      <div class="tera-tabs">
-        <button class="tera-tab active" onclick="teraTab('tasks',this)">Tasks</button>
-        <button class="tera-tab" onclick="teraTab('history',this)">History</button>
-      </div>
-      <!-- search -->
-      <input class="tera-search" placeholder="Search" id="tera-search">
-      <!-- project & task -->
-      <div class="tera-project">
-        <input type="checkbox" id="tera-proj-check">
-        <span class="tera-project-icon">📁</span>
-        <span>Default project</span>
-      </div>
-      <div class="tera-task">
-        <span class="tera-task-icon">📄</span>
-        <span class="tera-task-name">My task</span>
-        <button class="tera-task-play" id="tera-task-play" onclick="teraTaskPlay()" title="Iniciar desde la tarea">▶</button>
-      </div>
-      <!-- version bar -->
-      <div class="tera-version">
-        <span id="tera-version-text">24.7.1411-15b00aec</span>
-        <span style="cursor:pointer;font-size:13px">⚙</span>
+      <div style="padding:8px 12px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;align-items:center">
+        <div><div style="font-size:9px;color:#888">Clock In</div><div style="font-size:12px;font-weight:700;color:#111">05:58 AM</div></div>
+        <div><div style="font-size:9px;color:#888">Clock Out</div><div style="font-size:12px;font-weight:700;color:#111">11:02 AM</div></div>
+        <div style="text-align:right;font-size:12px;color:#6366f1;font-weight:600">05:03:59 h</div>
       </div>
     </div>
   </div>
-  <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#333;text-align:center;margin-top:4px">Hacé click en <strong style="color:#27ae60">Start</strong> o en ▶ junto a My task para simular el inicio</div>
+
+  <div class="svc-tip"><strong>Open Dashboard</strong> — el botón al pie de la app abre el dashboard completo en el navegador para ver reportes detallados de horas y productividad.</div>
+
 </div>
-
-
-
 <div class="tl-divider-line"></div>
 <!-- CODIGOS ZELLO -->
 <div class="tl-section">
@@ -6175,35 +6178,10 @@ function setCb(opt) {
 
 // TERAMIND SIMULATOR
 var teraRunning = false;
-function teraToggle() {
-  teraRunning = !teraRunning;
-  teraApply();
-}
-function teraTaskPlay() {
-  teraRunning = !teraRunning;
-  teraApply();
-}
-function teraApply() {
-  var status = document.getElementById('tera-status');
-  var btn = document.getElementById('tera-start-btn');
-  var taskPlay = document.getElementById('tera-task-play');
-  var rec = document.getElementById('tera-rec-indicator');
-  if (teraRunning) {
-    if (status) { status.textContent = 'Active'; status.classList.add('active'); }
-    if (btn) { btn.textContent = 'Stop'; btn.classList.add('running'); }
-    if (taskPlay) { taskPlay.textContent = '■'; taskPlay.classList.add('recording'); }
-    if (rec) rec.classList.add('visible');
-  } else {
-    if (status) { status.textContent = 'Not active'; status.classList.remove('active'); }
-    if (btn) { btn.textContent = 'Start'; btn.classList.remove('running'); }
-    if (taskPlay) { taskPlay.textContent = '▶'; taskPlay.classList.remove('recording'); }
-    if (rec) rec.classList.remove('visible');
-  }
-}
-function teraTab(tab, el) {
-  document.querySelectorAll('.tera-tab').forEach(function(t){ t.classList.remove('active'); });
-  el.classList.add('active');
-}
+
+
+
+
 
 
 // FLAT TIRE TABS
